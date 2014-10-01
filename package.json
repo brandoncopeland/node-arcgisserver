@@ -4,7 +4,7 @@
   "description": "node.js tools to administer an ESRI ArcGIS for Server site",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "node node_modules/jasmine-node/lib/jasmine-node/cli.js specs"
   },
   "repository": {
     "type": "git",
@@ -16,9 +16,11 @@
     "arcgisserver"
   ],
   "author": "Brandon Copeland <br@ndoncopeland.com>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/brandoncopeland/node-arcgisserver/issues"
   },
-  "homepage": "https://github.com/brandoncopeland/node-arcgisserver"
+  "homepage": "https://github.com/brandoncopeland/node-arcgisserver",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
 }
