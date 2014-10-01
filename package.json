@@ -20,7 +20,17 @@
     "url": "https://github.com/brandoncopeland/node-arcgisserver/issues"
   },
   "homepage": "https://github.com/brandoncopeland/node-arcgisserver",
+  "preferGlobal": "true",
+  "bin": {
+    "arcgisserver": "cli.js"
+  },
   "devDependencies": {
     "jasmine-node": "^1.14.5"
+  },
+  "dependencies": {
+    "colors": "^1.0.1",
+    "minimist": "^1.1.0",
+    "request-promise": "^0.2.0",
+    "underscore": "^1.7.0"
   }
 }
