@@ -1,0 +1,24 @@
+{
+  "name": "node-arcgisserver",
+  "version": "0.0.0",
+  "description": "node.js tools to administer an ESRI ArcGIS for Server site",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brandoncopeland/node-arcgisserver.git"
+  },
+  "keywords": [
+    "node",
+    "esri",
+    "arcgisserver"
+  ],
+  "author": "Brandon Copeland <br@ndoncopeland.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandoncopeland/node-arcgisserver/issues"
+  },
+  "homepage": "https://github.com/brandoncopeland/node-arcgisserver"
+}
