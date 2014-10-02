@@ -31,8 +31,10 @@
     "grunt-jasmine-node": "^0.2.1"
   },
   "dependencies": {
+    "bluebird": "^2.3.4",
     "colors": "^1.0.1",
-    "minimist": "^1.1.0",
+    "commander": "^2.3.0",
+    "ip": "^0.3.2",
     "request-promise": "^0.2.0",
     "underscore": "^1.7.0"
   }
