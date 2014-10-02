@@ -3,12 +3,12 @@
 var _ = require('underscore');
 var colors = require('colors/safe');
 
-var packageJson = require('./package.json');
+var packageJson = require('../package.json');
 
-var authenticate = require('./lib/authenticate');
+var authenticate = require('../lib/authenticate');
 
 var feature, features = {
-  countServices: require('./lib/services-count')
+  countServices: require('../lib/services-count')
 };
 
 var argv = require('minimist')(process.argv.slice(2), {
