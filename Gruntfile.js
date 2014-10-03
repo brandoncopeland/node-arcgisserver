@@ -10,11 +10,19 @@ module.exports = function (grunt) {
     },
     jasmine_node: {
       all: ['specs/']
+    },
+    release: {
+      options: {
+        tagName: '<%= version %>',
+        commitMessage: 'release <%= version %>',
+        tagMessage: 'tag <%= version %>', //default: 'Version <%= version %>'
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-jasmine-node');
+  grunt.loadNpmTasks('grunt-release');
 
   grunt.registerTask('test', ['jshint', 'jasmine_node']);
 };
