@@ -1,6 +1,6 @@
 {
   "name": "node-arcgisserver",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "node.js tools to administer an ESRI ArcGIS for Server site",
   "scripts": {
     "test": "grunt test"
