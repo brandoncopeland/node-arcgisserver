@@ -23,7 +23,7 @@
   "homepage": "https://github.com/brandoncopeland/node-arcgisserver",
   "preferGlobal": "true",
   "bin": {
-    "arcgisserver": "bin/arcgisserver.js"
+    "ags": "bin/ags.js"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
