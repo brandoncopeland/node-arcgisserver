@@ -1,11 +1,15 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     jshint: {
-      lib: {
-        src: ['bin/*.js', 'lib/**/*.js']
-      },
+      src: ['bin/*.js', 'lib/**/*.js'],
       options: {
         jshintrc: '.jshintrc'
+      }
+    },
+    jscs: {
+      src: ['bin/*.js', 'lib/**/*.js'],
+      options: {
+        config: '.jscsrc'
       }
     },
     jasmine_node: {
@@ -15,14 +19,15 @@ module.exports = function (grunt) {
       options: {
         tagName: '<%= version %>',
         commitMessage: 'release <%= version %>',
-        tagMessage: 'tag <%= version %>', //default: 'Version <%= version %>'
+        tagMessage: 'tag <%= version %>' //default: 'Version <%= version %>'
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-jscs');
   grunt.loadNpmTasks('grunt-jasmine-node');
   grunt.loadNpmTasks('grunt-release');
 
-  grunt.registerTask('test', ['jshint', 'jasmine_node']);
+  grunt.registerTask('test', ['jshint', 'jscs', 'jasmine_node']);
 };
