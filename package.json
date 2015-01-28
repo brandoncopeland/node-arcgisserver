@@ -30,14 +30,14 @@
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-jasmine-node": "^0.2.1",
     "grunt-jscs": "^1.2.0",
-    "grunt-release": "^0.7.0"
+    "grunt-release": "^0.10.0"
   },
   "dependencies": {
-    "bluebird": "^2.3.4",
-    "colors": "^1.0.1",
-    "commander": "^2.3.0",
+    "bluebird": "^2.9.3",
+    "colors": "^1.0.3",
+    "commander": "^2.6.0",
     "ip": "^0.3.2",
-    "request-promise": "^0.2.0",
+    "request-promise": "^0.3.3",
     "underscore": "^1.7.0"
   }
 }
