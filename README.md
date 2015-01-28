@@ -62,7 +62,7 @@ Additional Options
 - --started: list only started services
 - --stopped: list only stopped services
 - --service-type <type>: list only services matching the specified service type (GPServer, MapServer, GeocodeServer, SearchServer)
-- --verbose: include service descriptions in addition to folder and service names')
+- --verbose: include service descriptions in addition to folder and service names
 
 Output
 
