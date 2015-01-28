@@ -19,7 +19,7 @@ Report statistics on services for an ArcGIS for Server site
 $ ags servicestatistics -h servername:6080 -u username -p password
 ```
 
-Output:
+Output
 
 ```
 servername:6080
@@ -52,4 +52,26 @@ List services configured on an ArcGIS for Server site
 
 ```
 $ ags servicelist -h servername:6080 -u username -p password
+```
+
+Additional Options
+
+- --cached: list only cached map services
+- --public: list only public services
+- --private: list only private services
+- --started: list only started services
+- --stopped: list only stopped services
+- --service-type <type>: list only services matching the specified service type (GPServer, MapServer, GeocodeServer, SearchServer)
+- --verbose: include service descriptions in addition to folder and service names')
+
+Output
+
+```
+servername:6080
+---
+/service1
+/service2
+folder1/service1
+folder2/service1
+folder2/service2
 ```
