@@ -10,7 +10,8 @@ program
   .option('-u, --username <username>', 'user name for an administrative account on the ArcGIS for Server site.')
   .option('-p, --password <password>', 'credentials for the `username` administrative account.');
 
-require('../lib/commands/command-servicereport');
+require('../lib/commands/command-servicestatistics');
+require('../lib/commands/command-servicelist');
 
 program.parse(process.argv);
 

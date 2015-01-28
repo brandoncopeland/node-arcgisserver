@@ -11,10 +11,45 @@ $ npm install node-arcgisserver -g
 
 ## Usage
 
-### Service Report
+### Service Statistics
 
-Report the number of folders, services, cached services, service types, and status for an ArcGIS for Server instance
+Report statistics on services for an ArcGIS for Server site
 
 ```
-$ ags servicereport -h servername:6080 -u username -p password
+$ ags servicestatistics -h servername:6080 -u username -p password
+```
+
+Output:
+
+```
+servername:6080
+---
+Folders: 25
+Services: 66
+Public Services: 59
+Cached Map Services: 8
+---
+Service Types
+GPServer: 9
+MapServer: 46
+GeocodeServer: 9
+GeometryServer: 1
+SearchServer: 1
+---
+Statuses
+Started: 63
+Stopped: 3
+---
+Instances
+Maximum Possible Instances: 178
+Current Instances Busy: 0
+Current Instances Free: 59
+```
+
+### Service List
+
+List services configured on an ArcGIS for Server site
+
+```
+$ ags servicelist -h servername:6080 -u username -p password
 ```
