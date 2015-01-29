@@ -75,3 +75,33 @@ folder1/service1
 folder2/service1
 folder2/service2
 ```
+
+### Config
+
+List, add, and delete user configured default command arguments. Arguments for other commands will still be used if included, but if omitted, default configurations set through this command will be used.
+
+Supported configurations:
+
+```
+-h, --host
+-u, --username
+-p, --password
+```
+
+List all configurations
+
+```
+$ ags config
+```
+
+Add configuration for host. After, the value 'myserver:6080' will be used for commands if no `-h` or `--host` argument is provided
+
+```
+$ ags config host myserver:6080
+```
+
+Delete configuration for host
+
+```
+$ags config host -d
+```
